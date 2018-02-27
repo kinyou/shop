@@ -14,3 +14,14 @@ a:hover{
     float: right!important;
     margin: auto 0;
 }
+.badge-red {
+    background-color: #dd4b39 !important;
+}
+
+.badge-green {
+    background-color: #00a65a !important;
+}
+
+.badge-blue {
+    background-color: #3c8dbc !important;
+}

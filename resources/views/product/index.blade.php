@@ -8,7 +8,7 @@
                     <div class="panel-heading">
                         <div style="display: flex; justify-content: space-between; align-items: center;">
                             <span>商品列表</span>
-                            <a class="action-link"><span class="label label-success">新增</span></a>
+                            <a class="action-link"><span class="badge badge-green">新增</span></a>
                         </div>
                     </div>
 
@@ -44,10 +44,10 @@
                                     <!-- Edit Button -->
                                     <td>
                                         <a class="action-link">
-                                            <span class="label label-primary">编辑</span>
+                                            <span class="badge badge-blue">编辑</span>
                                         </a>
                                         <a class="action-link" href="http://www.baidu.com">
-                                            <span class="label label-danger">删除</span>
+                                            <span class="badge badge-red">删除</span>
                                         </a>
                                     </td>
 
