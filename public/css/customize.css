@@ -1,0 +1,16 @@
+.action-link {
+    cursor: pointer;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+.box-footer {
+    background-color: #fff;
+}
+
+.box-footer ul {
+    float: right!important;
+    margin: auto 0;
+}
