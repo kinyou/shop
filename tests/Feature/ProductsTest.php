@@ -2,25 +2,20 @@
 
 namespace Tests\Feature;
 
+use App\User;
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 
 class ProductsTest extends TestCase
 {
-    /**
-     * A basic test example.
-     *
-     * @return void
-     */
-    public function testExample()
-    {
-        $this->assertTrue(true);
-    }
-
+	/**
+	 * 商品列表
+	 */
     public function testProductIndex(){
-    	$response = $this->get('products');
+	    $user = factory(User::class)->create();
+    	$response = $this->actingAs($user)->withSession(['name'=>'xingyuan'])->get('products');
 
-    	$response->assertStatus(200);
+    	$response->assertSee('商品列表');
     }
 }
