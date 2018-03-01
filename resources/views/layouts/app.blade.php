@@ -36,7 +36,13 @@
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
                     <!-- Left Side Of Navbar -->
                     <ul class="nav navbar-nav">
-                        &nbsp;
+                        @if(isset($menus))
+                            &nbsp;@foreach($menus as $menu)
+                                <li>
+                                    <a href="{{route('products.index')}}">{{$menu->name}}</a>
+                                </li>
+                            @endforeach
+                        @endif
                     </ul>
 
                     <!-- Right Side Of Navbar -->
