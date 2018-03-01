@@ -1,5 +1,9 @@
 ## 优雅的开发过程
-
+- 前端build
+  yarn config set registry https://registry.npm.taobao.org
+  yarn install 
+  npm run watch-poll [开发环境]
+  npm run production [生产环境]
 - 使用脚手架生成对应的测试用例文件
   php artisan make:test ProductsTest
 - 生成对应的控制器
