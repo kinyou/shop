@@ -6,8 +6,15 @@
             <div class="col-md-12">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <div class="product-title">
                             <span>商品列表</span>
+                            <div class="input-group input-group-sm product-title-search">
+                                <input type="text" name="table_search" class="form-control pull-right" placeholder="搜索">
+
+                                <div class="input-group-btn">
+                                    <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                                </div>
+                            </div>
                             <a class="action-link"><span class="badge badge-green">新增</span></a>
                         </div>
                     </div>

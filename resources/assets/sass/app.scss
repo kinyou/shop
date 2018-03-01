@@ -7,3 +7,46 @@
 
 // Bootstrap
 @import "~bootstrap-sass/assets/stylesheets/bootstrap";
+
+/** 自定义的式样 */
+.action-link {
+  cursor: pointer;
+}
+a:hover{
+  text-decoration: none;
+}
+/**
+商品列表的分页
+ */
+.box-footer {
+  background-color: #fff;
+  ul {
+    float: right!important;
+    margin: auto 0;
+  }
+}
+/**
+商品列表的新增,删除,修改图标
+ */
+.badge-red {
+  background-color: #dd4b39 !important;
+}
+.badge-green {
+  background-color: #00a65a !important;
+}
+.badge-blue {
+  background-color: #3c8dbc !important;
+}
+
+/**
+商品列表的表头
+ */
+.product-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-title-search {
+  width: 150px;
+}
