@@ -19,4 +19,4 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/products', 'ProductsController@index')->name('products.index');
+Route::match(['get','post'],'/products', 'ProductsController@index')->name('products.index');
