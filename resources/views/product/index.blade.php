@@ -49,12 +49,28 @@
                                     <!-- ID -->
                                     <td>{{$product->name}}</td>
                                     <td>{{$product->cost_price}}</td>
-                                    <td>{{$product->channel}}</td>
+                                    <td>
+                                        @if($product->channel == 1 )
+                                            日本
+                                        @elseif($product->channel == 2)
+                                            韩国
+                                        @elseif($product->channel == 3)
+                                            美国
+                                        @elseif($product->channel == 4)
+                                            法国
+                                        @else
+                                            其他
+                                        @endif
+                                    </td>
                                     <td>{{$product->exchange_rate}}</td>
                                     <td>{{$product->sell_price}}</td>
                                     <td>{{$product->freight}}</td>
-                                    <td>{{$product->status}}</td>
-
+                                    <td>
+                                        @if($product->status == 1)
+                                            <span class="badge badge-green">有货</span>
+                                        @else
+                                            <span class="badge badge-red">缺货</span>
+                                        @endif
                                     <!-- Edit Button -->
                                     <td>
                                         <a class="action-link">
